@@ -12,10 +12,10 @@ int power(long int x,long int y,long int m)
     int k=power(x,y/2,m);
     if(y%2==1)
     {
-        return ((((k*k)%m)*x)%m);
+        return ((((1LL*k*k)%m)*x)%m);
     }
     else
-        return ((k*k)%m);
+        return ((1LL*k*k)%m);
 }
 
 //Time Complexity : O(1)
